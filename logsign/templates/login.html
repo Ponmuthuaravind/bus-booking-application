@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS Bus Booking</title>
+     <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <p>PA Bus Booking App</p>
+    
+    <div>
+        <img src="{% static 'asset/log.png' %}" alt="" width="600px" height="300px">
+    <form action="" method="post">
+        {% csrf_token %}
+        <table>
+        {{form.as_table}}
+        </table>
+
+        {% if error %}
+                <p class="error" id="error">{{ error }}</p> 
+        {% endif %}
+        {% if pass_error %}
+                <p class="error" id="error">{{ pass_error }}</p>  
+        {% endif %}
+        {% if ph_error %}
+                <p class="error" id="error">{{ ph_error }}</p>  
+        {% endif %}
+        <input type="submit" value="login" id="loginbtn">
+
+    </form> 
+    <h3>If you not have account? <a href="{% url 'sign' %}">sign up</a></h3> 
+    </div> 
+</body>
+</html>

@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(7, 30, 53);
+    color: white;
+    /* background-image: url(../asset/logbus.jpeg); */
+}
+form{
+    margin-top: 70px;
+    margin-left: 70px;
+    font-size: x-large;
+}
+th{
+    padding: 10px 0px;
+    color: rgb(7, 30, 53);
+}
+td{
+    padding-left: 30px;
+    color: rgb(7, 30, 53);
+    /* border: 1px solid white; */
+}
+input{
+    padding-left: 10px;
+    font-size: x-large;
+    border-radius: 10px;
+    border: 1px solid rgb(7, 30, 53);
+}
+#loginbtn{
+    margin-left: 370px;
+    margin-top: 20px;
+    background-color: rgb(7, 30, 53);
+    color: white;
+    padding: 3px 10px;
+    font-size: x-large;
+}
+p{
+    margin-left: 630px;
+    margin-top: 340px;
+    position: absolute;
+    color: rgb(7, 30, 53);
+    font-size: xx-large;
+}
+h3{
+    margin-left: 160px;
+    margin-top: 30px;
+    color: rgb(7, 30, 53);
+}
+a{
+    text-decoration: none;
+    color: red ;
+}
+   
+div{
+    display: inline-block;
+    width: 600px;
+    height: 680px;
+    /* border: 2px solid white; */
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    border-radius: 20px;
+    margin-left: 460px;
+    background-color: white;
+    margin-top: 30px;
+}
+img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#error{
+   
+    margin-top: 0px;
+    margin-left: 370px;
+    font-size: small;
+    color: red;
+}
