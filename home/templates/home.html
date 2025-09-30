@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <nav id="nav">
+        <p id="profile1">PA BUS BOOKING</p>
+        <a href="{% url 'cancelticket' %}" id="profile">cancel ticket</a>
+        <a href="{% url 'viewticket' %}" id="about">Tickets</a>
+    </nav>
+    <hr>
+    <hr>
+    <img src="{% static 'assert/HomeBanner.webp' %}" alt="" width="1536px" height="304px">
+    <hr><hr>
+    <table>
+        <tr>
+            <th>bus name </th>
+            <th>route no</th>
+            <th>start location</th>
+            <th>end location</th> 
+            <th>start time</th>
+            <th>reached time</th>
+            <th>avaliable seats </th>
+            <th>price</th>
+            <th>booking</th>
+        </tr>
+        <tbody>
+            {% for i,j in data %}
+            <tr>
+                <td>{{j.bus_name}}</td>
+                <td>
+                    {{j.route_no}}
+                </td>
+                <td>{{j.bus_start_loc}}</td>
+                <td>{{j.bus_end_loc}}</td>
+                <td>{{j.service_start_time}}</td>
+                <td>{{j.service_reached_time}}</td>
+                <td>{{j.count_of_seats}}</td>
+                <td>{{j.price}}</td>
+                <td><a href="{% url 'seatbook' bus=i %}"><input type="submit" value="booking" style="color: white;"></a></td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+   
+</form>
+</body>
+</html>

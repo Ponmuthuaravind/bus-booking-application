@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>View Ticket</title>
+    <link rel="stylesheet" href="{% static 'css/viewticket.css' %}">
+</head>
+<body>
+    <div id="ticketviewform">
+    <h2>Check Your Ticket</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        <label>Enter Ticket Number:</label>
+        <input type="text" name="ticket_number" required>
+        <button type="submit" id="button">View Ticket</button>
+    </form>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+   
+     <h3>Forget ticket number? <a href="{% url 'recoverticket' %}" id="a">recover</a></h3>
+    </div>
+        <div id="line">
+            </div>
+
+    <div id="detail">
+         {% if ticket %}
+        <h3>Ticket Details</h3>
+        <table>
+            <tr>
+                <th>Ticket Number: </th>
+                <td>{{ ticket.ticket_number }}</td>
+            </tr>
+            <tr>
+                <th>Name: </th> 
+                <td>{{ ticket.passanger_name }}</td>
+            </tr>
+            <tr>
+                <th>From:</th>
+                <td> {{ ticket.pick }}</td>
+            </tr>
+            <tr>
+                <th>To: </th>
+                <td>{{ ticket.drop }}</td>
+            </tr>
+            <tr>
+                <th>Date: </th>
+                <td>{{ ticket.date }}</td>
+            </tr>
+            <tr>
+                <th>Seats Booked:</th> 
+                <td>{{ ticket.seat }}</td>
+            </tr>
+            <tr>
+                <th>Email: </th>
+                <td>{{ ticket.email_id }}</td>
+            </tr>
+            <tr>
+                <th>Phone: </th>
+                <td>{{ ticket.phone_no }}</td>
+            </tr>
+        </table>
+    {% endif %}
+    
+   
+    </div>
+
+</body>
+</html>

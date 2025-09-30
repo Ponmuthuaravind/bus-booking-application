@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/tickets.css' %}" />
+  </head>
+  <body>
+    
+    <div id="ticket">
+        <h2>Booking Confirm</h2>
+
+        <img src="{% static 'asset/log.png' %}" alt="" width="600px" height="300px">
+      <table>
+        <tr>
+          <th>Ticket No:</th>
+          <td>{{ ticket.ticket_number }}</td>
+        </tr>
+        <tr>
+          <th>Name:</th>
+          <td>{{ ticket.passanger_name }}</td>
+        </tr>
+        <tr>
+          <th>From:</th>
+          <td>{{ ticket.pick }}</td>
+        </tr>
+        <tr>
+          <th>To:</th>
+          <td>{{ ticket.drop }}</td>
+        </tr>
+        <tr>
+          <th>Date:</th>
+          <td>{{ ticket.date }}</td>
+        </tr>
+        <tr>
+          <th>Seats Booked:</th>
+          <td>{{ ticket.seat }}</td>
+        </tr>
+      </table>
+    </div>
+    <a href="{% url 'cancel' ticket.id %}" >
+      <button type="button" id="button">Cancel Ticket</button>
+    </a>
+    
+    <a href="{% url 'downloadticket' ticket.id %}">
+      <button type="button" id="button2">Download Ticket</button>
+    </a>
+
+    <p id="happy">Have A Happy Journey...</p>
+  </body>
+</html>

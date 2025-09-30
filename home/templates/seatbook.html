@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/seatbook.css' %}">
+</head>
+<body>
+    <div id="book">
+        <form action="" method="post" id="bookking">
+            {% csrf_token %}
+            <table>
+            {{form.as_table}}
+            </table>
+            <input type="submit" value="book" id="bookbtn">
+        </form>
+    </div>
+
+
+    <div id="seatimg">
+        
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img1" title="1w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img2" title="5w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img3" title="9w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img4" title="13w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img5" title="17w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img6" title="21w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img7" title="25w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img8" title="29w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img9" title="33w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img10" title="37w"></a><br>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img1" title="2"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img2" title="6"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img3" title="10"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img4" title="14"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img5" title="18"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img6" title="22"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img7" title="26"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img8" title="30"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img9" title="34"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img10" title="38"></a><br>
+        <br><br><br>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img1" title="3"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img2" title="7"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img3" title="11"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img4" title="15"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img5" title="19"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img6" title="23"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img7" title="27"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img8" title="31"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img9" title="35"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img10" title="39"></a><br>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img1" title="4w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img2" title="8w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img3" title="12w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img4" title="16w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img5" title="20w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img6" title="24w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img7" title="28w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img8" title="32w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img9" title="36w"></a>
+        <a href=""><img src="{% static 'assert/seat.png' %}" alt="" height="50px" width="50px" id="img10" title="40w"></a><br>
+        </div>
+
+    <div id="ads">
+        <img src="{% static 'assert/log.png' %}" alt="" height="300px" width="800px">
+    </div>
+
+    <script>
+        var bg = document.getElementById('img1')
+        bg.addEventListener("click",fun)
+        function fun(){
+            bg.style.backgroundColor = 'green'
+        }
+        
+    </script>
+</body>
+</html>

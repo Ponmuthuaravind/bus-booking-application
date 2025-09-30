@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Recover Ticket</title>
+    <link rel="stylesheet" href="{% static 'css/recoverticket.css' %}">
+</head>
+<body>
+    <div id="find">
+        <h2>Find Your Ticket</h2>
+        <form method="post">
+            {% csrf_token %}
+            <label>Email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+            <label>Phone Number:</label>
+            <input type="text" name="phone" id="phone" required><br><br>
+            <label>Journey Date:</label>
+            <input type="date" name="date" id="date" required><br><br>
+            <button type="submit" id="button">Find Ticket</button>
+        </form>
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        
+    </div>
+    <br>
+    <div id="line"></div>
+    <div id="your">
+        {% if tickets %}
+        <h3>Your Tickets</h3>
+        <table border="1" cellpadding="8">
+            <tr>
+                <th>Ticket No</th>
+                <th>Name</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Date</th>
+                <th>Seats</th>
+                <th>Cancel</th>
+            </tr>
+            {% for ticket in tickets %}
+            <tr>
+                <td>{{ ticket.ticket_number }}</td>
+                <td>{{ ticket.passanger_name }}</td>
+                <td>{{ ticket.pick }}</td>
+                <td>{{ ticket.drop }}</td>
+                <td>{{ ticket.date }}</td>
+                <td>{{ ticket.seat }}</td>
+                <td>
+                    <form method="post" action="{% url 'cancel' ticket.id %}">
+                        {% csrf_token %}
+                        <button type="submit">Cancel</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+    </div>
+</body>
+</html>

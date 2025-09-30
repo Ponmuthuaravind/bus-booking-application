@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    
+}
+
+body{
+    background-color: rgb(7, 30, 53);
+}
+#book{
+    width: 600px;
+    height: 742px;
+    position: absolute;
+    /* margin-top: 40px; */
+    font-size: larger;
+    padding: 0px 50px;
+    color: white;
+    background-color: rgb(7, 30, 53)
+}
+#bookking{
+    margin-top: 40px;
+}
+th,td{
+    padding: 15px 0px 15px 50px;
+}
+input{
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#seatimg{
+    position: absolute;
+    border: 4px double black;
+    background-color: white;
+    /* color: white; */
+    margin-left: 800px;
+    margin-top: 30px;
+    width: 600px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    display: inline-block;
+    border-radius: 30PX;
+}
+#ads{
+    height: 392px;
+    width: 836px;
+    position: absolute;
+    background-color: rgb(7, 30, 53);
+    margin-left: 700px;
+    margin-top: 350px;
+}
+#ads > img{
+    border-radius: 20px;
+    margin-top: 50px;
+}
+#seatimg > a{
+    background-color: white;
+}
+
+#bookbtn{
+    background-color: white;
+    border: 1px double white;
+    margin-left: 350px;
+    padding: 5px 20px;
+    margin-top: 30px;
+}

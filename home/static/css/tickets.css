@@ -1,0 +1,110 @@
+body{
+    background-color: rgb(7, 30, 53);
+    color: white;
+    
+    /* background-image: url(../asset/logbus.jpeg); */
+}
+table{
+    border: 1px dotted white;
+    border-collapse: collapse;
+    margin-left: 80px;
+    margin-top: 20px;
+    position: absolute;
+}
+th{
+    padding: 15px 80px;
+    color: black;
+    border: 1px dotted rgb(7, 30, 53);
+}
+td{
+    padding: 10px 40px;
+    width:100px;
+    color: rgb(7, 30, 53);
+    font-size: large;
+    border: 1px dotted black;
+}
+#printbtn{
+    margin-left: 400px;
+    margin-top: 20px;
+    background-color: rgb(7, 30, 53);
+    color: white;
+    padding: 3px 10px;
+    font-size: x-large;
+    border-radius: 10px;
+}
+p{
+    margin-left: 630px;
+    margin-top: 280px;
+    position: absolute;
+    color: white;
+    font-size: x-large;
+    padding: 50px;
+}
+h2{
+    margin-left: 190px;
+    margin-top: -170px;
+    color: white;
+    position: absolute;
+}
+a{
+    text-decoration: none;
+    color: red ;
+}
+   
+div{
+    display: inline-block;
+    width: 600px;
+    height: 530px;
+    border-radius: 20px;
+    margin-left: 460px;
+    background-color: white;
+    margin-top: 190px;
+    position: absolute;
+}
+img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -180px;
+}
+
+#button{
+    color: white;
+    background-color: rgb(7, 30, 53);
+    padding: 5px 20px;
+    font-size: small;
+    margin-left: 900px;
+    margin-top: 680px;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: absolute;
+}
+
+
+#happy{
+    color: rgb(7, 30, 53);
+    margin-top: -0px;
+}
+
+#button1{
+    color: white;
+    background-color: rgb(7, 30, 53);
+    padding: 5px 30px;
+    font-size: small;
+    margin-left: 710px;
+    margin-top: 680px;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#button2{
+    color: white;
+    background-color: rgb(7, 30, 53);
+    padding: 5px 20px;
+    font-size: small;
+    margin-left: 500px;
+    margin-top: 680px;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: absolute;
+}

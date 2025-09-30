@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Cancel Ticket</title>
+    <link rel="stylesheet" href="{% static 'css/cancel.css' %}">
+</head>
+<body>
+    <div>
+    <table>
+        <tr>
+            <th  colspan="2" id="name"><p>Cancel Ticket for {{ ticket.passanger_name }}?</h2></th>
+            
+        </tr>
+        <tr>
+            <th>Bus:</th>
+            <td>{{ ticket.bus.name }}</td>
+        </tr>
+        <tr>
+            <th>Seats Booked:</th>
+            <td>{{ ticket.seat }}</td>
+        </tr>
+       <tr>
+            <th>Date: </th>
+            <td>{{ ticket.date }}</td>
+        </tr> 
+    </table>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Yes, Cancel Ticket</button>
+        <a href="{% url 'home' ticket.passanger_name %}">No, Go Back</a>
+    </form>
+    </div>
+</body>
+</html>

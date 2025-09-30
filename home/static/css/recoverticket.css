@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(7, 30, 53);
+}
+
+#find{
+    background-color: white;
+    display: inline-block;
+    width: 500px;
+    padding: 50px;
+    border-radius: 10px;
+    color: rgb(7, 30, 53);
+    margin-top: 30px;
+    margin-left: 500px;
+}
+
+#your{
+    background-color: white;
+    display: inline-block;
+    width: 500px;
+    padding: 50px;
+    border-radius: 10px;
+    color: rgb(7, 30, 53);
+    margin-top: 30px;
+    margin-left: 500px;
+}
+
+#line{
+    border: 1px dotted white;
+    margin-top: 30px;
+    margin-left: 500px;
+    width: 600px;
+}
+table{
+    border-collapse: collapse;
+}
+#email{
+    margin-left: 80px;
+}
+#phone{
+    margin-left: 20px;
+}
+#date{
+    margin-left: 32px;
+}
+
+button{
+    color: white;
+    background-color: rgb(7, 30, 53);
+    border-radius: 10px;
+}
+
+#button {
+    margin-left: 400px;
+    border-radius: 5px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+    <title>Cancel Ticket</title>
+    <link rel="stylesheet" href="{% static 'css/cancelticket.css' %}">
+</head>
+<body>
+  <div>
+    <h2>Cancel Ticket </h2>
+
+    {% if messages %}
+      <ul style="color: green;">
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="ticket_number">Enter Ticket Number:</label>
+        <input type="text" name="ticket_number" required>
+        <button type="submit" id="button">Cancel Ticket</button>
+    </form>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(7, 30, 53);
+}
+#ticketviewform{
+    background-color: white;
+    padding: 10px 50px;
+    display: inline-block;
+    width: 500px;
+    /* border: 1px  black; */
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 400px;
+    color: rgb(7, 30, 53);
+}
+#button{
+    color: white;
+    background-color: rgb(7, 30, 53);
+    border-radius: 5px;
+}
+#detail{
+    color: white;
+    display: inline-block;
+    width: 500px;
+    padding: 10px 80px 30PX 80PX;
+    /* border: 3px dotted white; */
+    margin-left: 300px;
+    font-size: larger;
+}
+
+th,td{
+    padding: 10px 100px;
+}
+table{
+    border: 1px solid white;
+}
+h3{
+    margin-left: 110px;
+
+}
+a{
+    /* text-decoration: none; */
+    color: rgb(7, 30, 53);
+}
+
+#line{
+    border: 1px dotted white;
+    margin-top: 20px;
+    width: 700px;
+    margin-left: 335px;
+
+}
